@@ -51,7 +51,6 @@ def calcular_ndvi(b4_file, b5_file, output_file):
     realiza el cálculo del NDVI para cada píxel, y luego guarda el resultado en un nuevo
     archivo raster especificado por `output_file`
     """
-    print(b4_file)
     b4 = rasterio.open(b4_file).read(1)
     b5 = rasterio.open(b5_file).read(1)
 

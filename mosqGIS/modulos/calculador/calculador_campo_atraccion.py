@@ -15,7 +15,7 @@ Funciones:
 import numpy as np
 
 from mosqGIS.modulos.calculador.calculador_mapa_base import CalculadorMapaBase 
-from mosqGIS.modulos.calculador.calculo_de_atraccion import calculo_campo_atraccion
+from mosqGIS.modulos.calculador.calculo_campo_atraccion import calculo_campo_atraccion
 
 class CalculadorCampoAtraccion(CalculadorMapaBase):
     """Clase que permite el cálculo del campo de atracción a partir de

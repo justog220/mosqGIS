@@ -1,7 +1,11 @@
-<h1 style="text-align: center;">mosqGIS</h1>
+
 
 <div align="center">
+<div style="width: 100%; height: 200px; overflow: hidden; position: relative;"><img src="https://raw.githubusercontent.com/justog220/TIF-Geomatica/refs/heads/main/Informe/Images/ovitrampas.png" alt="Banner" style="position: absolute; top: -100px; left: 0; width: 100%;"></div>
 
+
+
+<h1>mosqGIS</h1>
 <img alt="PyPI - Version" src="https://img.shields.io/pypi/v/mosqGIS">
 <img alt="Static Badge" src="https://img.shields.io/badge/OS-Linux-blue">
 <img alt="Static Badge" src="https://img.shields.io/badge/contributions-welcome-orange">

@@ -14,7 +14,8 @@ Funciones:
 import rasterio
 import matplotlib.pyplot as plt
 from matplotlib.colors import ListedColormap
-from mosqGIS.modulos.clasificador.algoritmos_clasificacion import clasificar_clases
+
+from mosqGIS.modulos.clasificador.clasificadores import clasificar_clases
 from mosqGIS.modulos.clasificador.clasificador_base import ClasificadorBase
 
 class ClasificadorSuelos(ClasificadorBase):

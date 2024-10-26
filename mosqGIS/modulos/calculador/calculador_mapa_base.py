@@ -6,7 +6,9 @@ Clases:
     CalculadorMapaBase: Una clase base abstracta para gestionar el cálculo de mapas.
 """
 
-class CalculadorMapaBase:
+from abc import ABC, abstractmethod
+
+class CalculadorMapaBase(ABC):
     def __init__(self, carpeta_recortadas):
         """
         Inicializa la clase CalculadorMapaBase.
@@ -16,6 +18,7 @@ class CalculadorMapaBase:
         """
         self.carpeta_recortadas = carpeta_recortadas
 
+    @abstractmethod
     def calcular_mapa(self):
         """
         Metodo abstracto para calcular el mapa. Las subclases deben implementar este metodo.
@@ -23,5 +26,5 @@ class CalculadorMapaBase:
         Raises:
             NotImplementedError: Si el metodo no es implementado por una subclase.
         """
-        raise NotImplementedError("Las subclases deben implementar este método")
+        pass
     

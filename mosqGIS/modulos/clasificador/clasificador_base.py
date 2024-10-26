@@ -11,7 +11,10 @@ Métodos:
     - __init__: Inicializa la clase con las rutas de los índices espectrales.
     - clasificar: Método abstracto que debe ser implementado por las subclases.
 """
-class ClasificadorBase:
+
+from abc import ABC, abstractmethod
+
+class ClasificadorBase(ABC):
     """
     Clase base para clasificadores de imágenes utilizando índices espectrales.
 
@@ -28,6 +31,7 @@ class ClasificadorBase:
         """
         self.rutas_indices = rutas_indices
 
+    @abstractmethod
     def clasificar(self):
         """
         Método abstracto que debe ser implementado por las subclases.
@@ -35,4 +39,4 @@ class ClasificadorBase:
         Raises:
             NotImplementedError: Si la subclase no implementa este método.
         """
-        raise NotImplementedError("Subclasses should implement this method")
+        pass
